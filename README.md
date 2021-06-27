@@ -4,4 +4,4 @@
 - In command prompt, cd to where you cloned the repo, then run
   - 'npm install'
   - 'npm start' 
-- UI should be running on localhost:3000
+- UI should be running on localhost:8080
