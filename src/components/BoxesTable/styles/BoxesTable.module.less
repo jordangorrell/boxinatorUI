@@ -1,0 +1,63 @@
+.boxes-table-wrapper {
+    max-width: 1000px;
+    margin: auto;
+
+    h1, h2 {
+        color: #ffdcdc;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .boxes-table {
+        grid-template-columns: 
+        minmax(150px, 1fr)
+        minmax(150px, 1.67fr)
+        minmax(150px, 1.67fr)
+        minmax(150px, 1.67fr)
+    }
+    
+    .boxes-table {
+        width: auto;
+        flex: 1;
+        display: grid;
+        border-collapse: collapse;
+        margin-bottom: 1em;
+        gap: 2px;
+    
+        thead,
+        tbody,
+        tr {
+            display: contents;
+            transition: 0.15s ease-in;
+        }
+    
+        th,
+        td {
+            padding: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    
+        th {
+            top: 0;
+            background: #323c88;
+            text-align: left;
+            font-weight: normal;
+            font-size: 1.1rem;
+            color: white;
+            position: relative;
+        }
+    
+        td {
+            background: #eee;
+            border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+        }
+
+        .is-number-cell {
+            text-align: right;
+        }
+    }
+}

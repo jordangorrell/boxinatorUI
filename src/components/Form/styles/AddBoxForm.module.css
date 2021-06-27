@@ -1,0 +1,74 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.container .form-wrapper {
+  border-radius: 12px;
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.container .form-wrapper .form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  border-radius: 12px;
+  background-color: white;
+}
+.container .form-wrapper .form .form-field input,
+.container .form-wrapper .form .form-field label {
+  display: block;
+}
+.container .form-wrapper .form input,
+.container .form-wrapper .form select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+.container .form-wrapper .form input:focus,
+.container .form-wrapper .form select:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+.container .form-wrapper .form input[type="color"] {
+  height: 3em;
+  padding: 0;
+}
+.container .form-wrapper .form .invalid {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+.container .form-wrapper .form .invalid:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+.container .form-wrapper .form button {
+  font: inherit;
+  background-color: #240370;
+  color: white;
+  border: 1px solid #240370;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.container .form-wrapper .form button:hover,
+.container .form-wrapper .form button:active {
+  background-color: #33059e;
+  border-color: #33059e;
+}
+.container .form-wrapper .form button:disabled {
+  background-color: #635388;
+  color: white;
+  border: 1px solid #635388;
+  cursor: default;
+}
+.container .error-text {
+  color: #b40e0e;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=AddBoxForm.module.css.map */

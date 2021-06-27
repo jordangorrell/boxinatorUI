@@ -1,0 +1,52 @@
+.boxes-table-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+.boxes-table-wrapper h1,
+.boxes-table-wrapper h2 {
+  color: #ffdcdc;
+}
+.boxes-table-wrapper h2 {
+  text-align: center;
+}
+.boxes-table-wrapper .boxes-table {
+  grid-template-columns: minmax(150px, 1fr) minmax(150px, 1.67fr) minmax(150px, 1.67fr) minmax(150px, 1.67fr);
+}
+.boxes-table-wrapper .boxes-table {
+  width: auto;
+  flex: 1;
+  display: grid;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  gap: 2px;
+}
+.boxes-table-wrapper .boxes-table thead,
+.boxes-table-wrapper .boxes-table tbody,
+.boxes-table-wrapper .boxes-table tr {
+  display: contents;
+  transition: 0.15s ease-in;
+}
+.boxes-table-wrapper .boxes-table th,
+.boxes-table-wrapper .boxes-table td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.boxes-table-wrapper .boxes-table th {
+  top: 0;
+  background: #323c88;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: white;
+  position: relative;
+}
+.boxes-table-wrapper .boxes-table td {
+  background: #eee;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+}
+.boxes-table-wrapper .boxes-table .is-number-cell {
+  text-align: right;
+}
+/*# sourceMappingURL=BoxesTable.module.css.map */
